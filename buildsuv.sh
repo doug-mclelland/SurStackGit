@@ -6,7 +6,7 @@ ufw allow http
 ufw allow https
 ufw allow 17171/tcp
 ufw allow 8091/tcp
-ufw enable
+##ufw enable
 
 
 ## update the os
