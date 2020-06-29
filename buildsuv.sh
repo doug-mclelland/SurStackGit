@@ -1,7 +1,11 @@
 ##buildsuv.sh
 
 ## open firewall
-ufw allow ssh, http, https, 17171, 8091
+ufw allow ssh
+ufw allow http
+ufw allow https
+ufw allow 17171/tcp
+ufw allow 8091/tcp
 
 ## update the os
 apt update -y
