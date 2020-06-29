@@ -38,11 +38,3 @@ do
   echo "UUID=$uuid  /root/abcd  ext4 defaults 0 0" >> /etc/fstab
 done
 
-
-## Then pass this script ("scan_add_fstab.sh") to /bin/bash on each server
-for i in server1 server2
-do
-  ssh -x "$i" "/bin/bash" < scan_add_fstab.sh
-done
-
-
